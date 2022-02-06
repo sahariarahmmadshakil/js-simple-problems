@@ -7,15 +7,33 @@
 // }
 
 // same problem solving using function 
+// ========================================
+// ========================================
 
-function sumOfNumbers(inputValue) {
-    let sum = 0;
-    for (let i = 0; i <= inputValue; i = i + 1) {
-        sum = sum + i;
-        console.log(sum)
+
+// function sumOfNumbers(inputValue) {
+//     let sum = 0;
+//     for (let i = 0; i <= inputValue; i = i + 1) {
+//         sum = sum + i;
+//         console.log(sum)
+//     }
+//     return sum; // to get only sum of al numbers value
+
+// }
+// let output = sumOfNumbers(50);
+// console.log('Total Sum of the Vlue is:', output);
+
+// ======================================================
+// ======================================================
+
+
+// Printing number without using loop
+
+function number(i) {
+    if (i > 50) {
+        return
     }
-    return sum; // to get only sum of al numbers value
-
+    console.log(i);
+    number(i + 1);
 }
-let output = sumOfNumbers(50);
-console.log('Total Sum of the Vlue is:', output);
+number(1);
